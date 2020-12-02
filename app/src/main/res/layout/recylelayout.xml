@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/rel_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_rect"
+        android:elevation="@dimen/_5sdp"
+        android:padding="@dimen/_7sdp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_imagenew"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/circle_imagenew"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_moviename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="clip_vertical"
+                android:text="@string/chicken"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/txt_movieyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1989"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
